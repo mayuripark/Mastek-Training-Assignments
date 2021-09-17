@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3><u> p l l</u></h3>
+    <ol start="5">
+        <li>HTML</li>
+        <li>CSS</li>
+        <ol>
+            <li type="A">t i c</li>
+            <dl>- 2d tr</dl>
+        </ol>
+    </ol>
+
+    <object data="my.wav" type="audio/wav"></object>
+
+    <script>
+        let person=
+            {
+                height:180,
+                weight:68,
+            }
+        if ('age' in person === false)
+        {
+          person.age=24;
+        }
+        console.log(person.age)
+        </script>
+        <script>
+            const arr1 =[1,2,3];
+            let arr2 =[1,2,3];
+            const obj1={name:"Hi"};
+            const obj2={name:"Hi"};
+            arr1.push(4,5);
+            arr2.push(4,5);
+            obj1.name="Deepak";
+            obj2.name="Deepak";
+            var result1 = obj1==obj2;
+            var result2 = arr1==arr2;
+            var result = result1==result2
+            console.log(result)
+        </script>
+        <script>
+            function loopInArray(arr)
+            {
+                var len = arr.length, i=0,j=arr.length-1;
+                do
+                {
+                    console.log(arr[i] +arr[j]);
+                }
+                while(i++<j--);
+            }
+            let arr =[1,2];
+            console.log(loopInArray(arr));
+        </script>
+        <script>
+            var func=function(){
+                var timer = setTimeout(function(){
+                    console.log("Deepak");
+                },3000);
+                clearTimeout(timer);
+            }
+            func()
+        </script>
+        <script>
+            $('form.contact').submit(function(e){
+                return false;
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#p1").click(function(){
+                    $("#p1").prepend("Paragraph").append("one");
+                    $("#p2").prependTo("#p1")
+                })
+            })
+        </script>
+        <p id="p1"> 1 </p>
+        <p id="p2"></p>
+
+        <p id="calculation"></p>
+        <script type="text/javascript">
+
+            function addData (number1, number2){
+                this.number1=number1;
+                this.number2=number2;
+            }
+            addData.prototype.calculation=function(){
+                return this.number2+this.number1;
+            }
+            var addition = new addData(5,4);
+            document.getElementById("calculation").innerHTML=addition.calculation();
+        </script>
+
+        <script>
+            var num =10;
+            function fun (){
+                num =100;
+                return;
+                function num(){}
+            }
+            fun();
+            console.log(num);
+        </script>
+
+        <script>
+            function mytest(){
+                var a = {nam:"mytest"};
+                return delete a.nam;
+            }
+        </script>
+
+        <script>
+            var numberString="34";
+            console.log(typeof(numberString))
+            var response = parseFloat(numberString)
+            console.log(typeof(response))
+        </script>
+
+        <script>
+            Array.prototype.myMethod=function(){
+                for(i=0;i<this.length;i++){
+                    this[i]=this[i].toUpperCase();
+                }
+            }
+            var my_array=["one","two","Three", "Four"];
+            my_array.myMethod();
+            document.write(my_array);
+        </script>
+
+        <script>
+            var str1 = "Welcome To India";
+            var regExpStr = str1.search(India);
+        </script>
+        <script>
+            var my_var;
+            if(my_var==undefined){
+                document.write("my_var is undefined");
+            }
+            else{
+                document.write("my_var is defined");
+    
+            }
+        </script>
+
+        <script>
+            if(isNaN(3*{valueof : function() {return'5'-null}}))
+            alert("Not a number")
+        </script>
+</body>
+
+</html>
