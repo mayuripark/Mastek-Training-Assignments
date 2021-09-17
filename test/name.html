@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="calculation"></p>
+    <script type="text/javascript">
+
+        function addData (number1, number2){
+            this.number1=number1;
+            this.number2=number2;
+        }
+        addData.prototype.calculation=function(){
+            return this.number2+this.number1;
+        }
+        var addition = new addData(5,4);
+        document.getElementById("calculation").innerHTML=addition.calculation();
+    </script>
+</body>
+</html>
